@@ -13,7 +13,7 @@ screen = pygame.display.set_mode((screen_w, screen_h))
 
 hehe = [pygame.image.load(os.path.join("Assets/MindBlowon", 'hehe.png')),
         pygame.image.load(os.path.join("Assets/MindBlowon", 'cry.png'))]
-running = [pygame.image.load(os.path.join("Assets/MindBlowon", 'slide1.png')),
+sliding = [pygame.image.load(os.path.join("Assets/MindBlowon", 'slide1.png')),
            pygame.image.load(os.path.join("Assets/MindBlowon", 'slide2.png'))]
 jumping = [pygame.image.load(os.path.join("Assets/MindBlowon", 'jump.png'))]
 small_cactus = [pygame.image.load(os.path.join("Assets/Cactus", 'SmallCactus11.png')),
@@ -37,7 +37,7 @@ class MindBlown:
     jump_VEL = 9.5
 
     def __init__(self):
-        self.run_img = running
+        self.run_img = sliding
         self.jump_img = jumping
 
         self.mb_Run = True
